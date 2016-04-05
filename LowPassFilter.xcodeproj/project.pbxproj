@@ -13,6 +13,7 @@
 		A37CF8C51CB38F350048C10F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A37CF8C41CB38F350048C10F /* Images.xcassets */; };
 		A37CF8C81CB38F350048C10F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A37CF8C61CB38F350048C10F /* LaunchScreen.xib */; };
 		A37CF8D41CB38F360048C10F /* LowPassFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37CF8D31CB38F360048C10F /* LowPassFilterTests.swift */; };
+		A37CF8DE1CB38F900048C10F /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37CF8DD1CB38F8F0048C10F /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		A37CF8CD1CB38F360048C10F /* LowPassFilterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LowPassFilterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A37CF8D21CB38F360048C10F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A37CF8D31CB38F360048C10F /* LowPassFilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowPassFilterTests.swift; sourceTree = "<group>"; };
+		A37CF8DD1CB38F8F0048C10F /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A37CF8DE1CB38F900048C10F /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		A37CF8AF1CB38F350048C10F = {
 			isa = PBXGroup;
 			children = (
+				A37CF8DD1CB38F8F0048C10F /* CoreMotion.framework */,
 				A37CF8BA1CB38F350048C10F /* LowPassFilter */,
 				A37CF8D01CB38F360048C10F /* LowPassFilterTests */,
 				A37CF8B91CB38F350048C10F /* Products */,
@@ -161,6 +165,7 @@
 				TargetAttributes = {
 					A37CF8B71CB38F350048C10F = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = C57WNCPU27;
 					};
 					A37CF8CC1CB38F360048C10F = {
 						CreatedOnToolsVersion = 6.2;
@@ -336,9 +341,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Harshul Shah (EEU44DK82S)";
 				INFOPLIST_FILE = LowPassFilter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "31e5d110-3c83-4b0d-aedc-6c36d16d5377";
 			};
 			name = Debug;
 		};
@@ -346,9 +354,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Harshul Shah (EEU44DK82S)";
 				INFOPLIST_FILE = LowPassFilter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "31e5d110-3c83-4b0d-aedc-6c36d16d5377";
 			};
 			name = Release;
 		};
